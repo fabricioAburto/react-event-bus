@@ -33,5 +33,5 @@ export function EventBusBuilder({ debug, logPrefix }) {
     if (debug) logger(prefix, ...args);
   };
 
-  return { listen, dispatch, once, off };
+  return { listen, dispatch, once, off, bus };
 }

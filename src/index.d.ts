@@ -2,6 +2,7 @@ import React from 'react';
 
 export type EventHandler = (payload: any) => any;
 export interface EventBus {
+  bus: object;
   dispatch(key: string, payload: any): void;
   off(key: string, handler: EventHandler): void;
   once(key: string, handler: EventHandler): void;
