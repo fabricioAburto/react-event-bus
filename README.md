@@ -1,10 +1,8 @@
 # react-event-bus 🚌
 
-This is a simple react project for creating event-driven applications.
+This is a simple project for creating react applications using **event-driven architecture**.
 
-<div align="center">
-  <img src="./docs/bus.png">
-</div>
+![Bus Image](./docs/bus.png)
 
 ## How to use it?
 
@@ -36,9 +34,9 @@ root.render(
 
 <br >
 
-## How to integrate with my existed code?
+## How to integrate with my existing code?
 
-To keep your code clean of implementations, it is proposed to create an adapter using a hoc:
+To keep your code clean with any code implementation, it is proposed to create an adapter using a hoc:
 
 ```jsx
 import { useEvenBus, useBusEffectOn } from '@joseaburto/react-event-driven';
@@ -54,6 +52,7 @@ export default asideMenuAdapter(Menu);
 
     useBusEffectOn('togle-menu', val => setState(pre => !pre));
 
+    // You need a subscriber to this. Maybe react-router-dom
     const handleOnItemClick = index => dispatch('redirect-to', index);
 
     return <Menu {...props} open={isOpen} onItemClick={handleOnItemClick} />;
@@ -67,7 +66,10 @@ export Menu from '.';
 export default asideMenuAdapter(Menu);
 ```
 
-## What if I want to create my own provider?
+## What if I want to create my own provider or impl?
+
+Well, that is an easy tasks. The key here is the bus, so you just need a new
+bus instance and a new context. Check the example:
 
 ```jsx
 import { EventBusBuilder } from '@libs/event-bus';
