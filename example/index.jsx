@@ -15,10 +15,17 @@ const MyLabel3 = () => {
 };
 
 const App = () => {
-  const { dispatch } = useEventBus();
+  const { dispatch, bus } = useEventBus();
   return (
     <div title="Pepex">
-      <button onClick={() => dispatch('print', Date.now())}>Click</button>
+      <button
+        onClick={() => {
+          console.log(bus);
+          dispatch('print', Date.now());
+        }}
+      >
+        Click
+      </button>
       <MyLabel />
       <MyLabel3 />
     </div>
