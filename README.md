@@ -7,8 +7,8 @@ This is a simple project for creating react applications using **event-driven ar
 ## Installation
 
 ```bash
-$ npm install @joseaburto/react-event-bus   # for yarn users
-$ yarn add @joseaburto/react-event-bus      # for yarn users
+$ npm install @joseaburt/react-event-bus   # for yarn users
+$ yarn add @joseaburt/react-event-bus      # for yarn users
 ```
 
 ## How to use it?
@@ -19,7 +19,7 @@ Just wrap your application with the provider.
 // src/index.js
 
 import ReactDOM from 'react-dom/client';
-import EventBusProvider from '@joseaburto/react-event-driven';
+import EventBusProvider from '@joseaburt/react-event-bus';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -46,7 +46,7 @@ root.render(
 To keep your code clean with any code implementation, it is proposed to create an adapter using a hoc:
 
 ```jsx
-import { useEvenBus, useBusEffectOn } from '@joseaburto/react-event-driven';
+import { useEvenBus, useBusEffectOn } from '@joseaburt/react-event-bus';
 
 /**
  * Adapt a given Menu Component to work with event-driven.
