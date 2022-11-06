@@ -123,4 +123,4 @@ Please see the [Contributing Guidelines](./CONTRIBUTING.md).
 
 ## Author
 
-- [Jared Palmer](https://twitter.com/jaredpalmer)
+- [Jose Aburto](https://www.linkedin.com/in/jose-aburto/)
