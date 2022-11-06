@@ -4,6 +4,13 @@ This is a simple project for creating react applications using **event-driven ar
 
 ![Bus Image](./docs/bus.png)
 
+## Installation
+
+```bash
+$ npm install @joseaburto/react-event-bus   # for yarn users
+$ yarn add @joseaburto/react-event-bus      # for yarn users
+```
+
 ## How to use it?
 
 Just wrap your application with the provider.
@@ -66,6 +73,8 @@ export Menu from '.';
 export default asideMenuAdapter(Menu);
 ```
 
+<br >
+
 ## What if I want to create my own provider or impl?
 
 Well, that is an easy tasks. The key here is the bus, so you just need a new
@@ -103,3 +112,15 @@ export function useEventDrivenComponentEffect(event, cb) {
 ```
 
 With this you have just created your new API for your specific context using event-driven with the bus.
+
+<br >
+
+## Contributing
+
+Please see the [Contributing Guidelines](./CONTRIBUTING.md).
+
+<br >
+
+## Author
+
+- [Jared Palmer](https://twitter.com/jaredpalmer)
