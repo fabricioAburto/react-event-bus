@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@test-utils/*": ["test-utils"],
+      "@react-event-bus/*": ["dist"]
+    }
+  }
+}
