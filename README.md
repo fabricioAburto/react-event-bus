@@ -1,6 +1,6 @@
 # react-event-bus 🚌
 
-This is a simple project for creating react applications using **event-driven architecture**.
+This is a simple project (lightweight 6.68 KB) for creating react applications using **event-driven architecture**.
 
 ![Bus Image](./docs/bus.png)
 

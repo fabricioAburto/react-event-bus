@@ -1,6 +1,6 @@
 {
   "name": "@joseaburt/react-event-bus",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": false,
   "description": "This is a simple project for creating react applications using event-driven architecture.",
   "main": "dist/index.js",
