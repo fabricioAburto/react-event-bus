@@ -1,6 +1,6 @@
 {
   "name": "@joseaburt/react-event-bus",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "description": "This is a simple project for creating react applications using event-driven architecture.",
   "main": "dist/index.js",
@@ -9,6 +9,9 @@
     "build": "rollup -c --watch",
     "npm:publish": "npm publish --access public"
   },
+  "files": [
+    "dist"
+  ],
   "repository": "https://github.com/PinoFlores/react-event-bus",
   "homepage": "https://github.com/PinoFlores/react-event-bus#readme",
   "bugs": {
