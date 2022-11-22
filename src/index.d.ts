@@ -23,6 +23,7 @@ export function useBusEffectOn(event: string, cb: (payload: any) => void): void;
 export function EventBusBuilder(configs: EventBusBuilderConfigs): EventBus;
 
 interface EventBusProviderProps extends EventBusBuilderConfigs {
+  eventBus?: EventBus;
   children: React.ReactNode;
 }
 
