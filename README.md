@@ -2,7 +2,7 @@
 
 This is a simple project (lightweight 6.68 KB) for creating react applications using **event-driven architecture**.
 
-![Bus Image](./docs/bus.png)
+![Bus Image](https://raw.githubusercontent.com/PinoFlores/react-event-bus/master/docs/bus.png)
 
 ## Installation
 
